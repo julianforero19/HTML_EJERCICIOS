@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Informacion sobre el producto</title>
+</head>
+<body>
+	<h2>Informacion sobre el producto</h2>
+	<fieldset form="formulario_datos" name="grupo_datos_basicos">
+<legend> Datos basicos </legend>
+Nombre<br>
+<input type="text" name="nombre"><br>
+Descripcion:<br>
+<textarea name="comentario" rows="5" cols="50"></textarea><br><br><br>
+
+Fotografía<input type="file" name="fotografia" accept=”image/*”><br><br><br>
+
+<input type="checkbox" name="visitas" value="contador">Activar el contador de visitas<br>
+
+</fieldset>
+
+<fieldset form="formulario_economia" name="grupo_datos_economicos">
+<legend> Datos economicos </legend>
+
+Precio
+<input type="text" name="precio"> $
+
+Impuestos
+<input type="text" name="impuestos" list="impuestos" ><br>
+<datalist id="impuestos">
+<option label="4%">4%</option>
+<option label="7%">7%</option>
+<option label="16%">16%</option>
+<option label="25%">25%</option>
+</datalist><br><br>
+
+PROMOCION<br>
+<input type="radio" name="PROMOCION" value="ninguno"> ninguno <br>
+<input type="radio" name="PROMOCION" value="transporte gratuito"> transporte gratuito<br>
+<input type="radio" name="PROMOCION" value="descuento 5%"> descuento 5% <br>
+
+
+</fieldset>
+
+</body>
+</html>

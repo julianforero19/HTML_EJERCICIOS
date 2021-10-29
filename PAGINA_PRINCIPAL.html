@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EJERCICIOS HTML REPASO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link ref="import" href="./ejercicio 1.html">
+        <link ref="import" href="./ejercicio 2.html">
+        <link ref="import" href="./ejercicio 3.html">
+        <link ref="import" href="./ejercicio 4.html">
+        <link ref="import" href="./ejercicio 4_2.html">
+        <link ref="import" href="./ejercicio 5.html">
+        <link ref="import" href="./ejercicio 6.html">
+        <link ref="import" href="./ejercicio 6_2.html">
+        <link ref="import" href="./ejercicio 6_3.html">
+        <link ref="import" href="./ejercicio 6_4.html">
+        <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+        *{font-family: 'Rampart One', cursive;}
+        #titulos{color: rgb(96, 245, 66);}
+        
+
+
+
+            body {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                background: #dadada;
+            }
+
+            body > * {
+                width: 100%;
+                border: 1px solid #000;
+                border-bottom-width: 0;
+                box-sizing: border-box;
+                text-align: center;
+            }
+
+            body > *:last-child {
+                border-bottom-width: 1px;
+
+            }
+            header{
+                background: #626fe6;
+            }
+
+            header,
+            footer {
+                min-height: 100px;
+            }
+
+            aside {
+                width: 25%;
+                border: 0 solid #000;
+                border-right-width: 1px;
+                background:#e85b48;
+            }
+        .Row
+
+        {
+
+            display: table-row;
+
+        }
+
+        .Cell
+
+        {
+
+            display: table-cell;
+
+            border: solid;
+
+            border-width: thin;
+
+            padding-left: 5px;
+
+            padding-right: 5px;
+
+        }
+
+            .container .body {
+                width: 75%;
+            }
+            .body{
+                background: #ffffff;
+            }
+            .lista{
+                font-family: 'Rubik Beastly', cursive;
+            }
+            .container {
+                display: flex;
+                min-height: 300px;
+            }
+            #foot{
+                font-family: 'Alfa Slab One', cursive;
+                background:#d59bf6;
+                color: ;
+            }
+            li{
+                list-style:none;
+            }
+            iframe{
+                margin:0; padding:0; height:100%;
+                display:block; width:100%; border:none; 
+            }
+
+        </style>
+        <script type="text/javascript">
+
+            function pintar(key) {
+
+                switch (key) {
+                    case 0:
+                       document.getElementById("muestra").innerHTML = "";
+        
+                        break;
+                    case 1:
+                        document.getElementById("muestra").innerHTML = "<iframe src='ejercicio 1.html'></iframe>";
+                        break;
+                    case 2:
+                        document.getElementById("muestra").innerHTML = "<iframe src='ejercicio 2.html'></iframe>";
+
+                        break;
+                    case 3:
+                        document.getElementById("muestra").innerHTML = "<iframe src='ejercicio 3.html'></iframe>";
+
+                        break;
+                    case 4:
+                        document.getElementById("muestra").innerHTML = "<iframe src='tabla_case_4.html'></iframe>";
+
+                        break;
+
+                    case 5:
+                        document.getElementById("muestra").innerHTML = "<iframe src='ejercicio 5.html'></iframe>";
+
+                        break;
+                    case 6:
+
+                    document.getElementById("muestra").innerHTML = "<iframe src='tabla_case_6.html'></iframe>"
+                        break;
+                    case 7:
+                        document.getElementById("muestra").innerHTML = "<iframe src='tabla_case_7.html'></iframe>";
+
+                        break;
+                    case 8:
+                        document.getElementById("muestra").innerHTML = "<iframe src='ejercicio button.html'></iframe>";
+
+                        break;
+                    case 9:
+                        document.getElementById("muestra").innerHTML = "<iframe src='ejercicio fieldset.html'></iframe>";
+
+                        break;
+                    case 10:
+                        document.getElementById("muestra").innerHTML = "<iframe src='ejercicio label.html'></iframe>";
+
+                        break;
+                    case 11:
+                        document.getElementById("muestra").innerHTML = "<iframe src='keygen 1.html'></iframe>";
+
+                        break;
+                    case 12:
+                        document.getElementById("muestra").innerHTML = "<iframe src='meter_ejercicio.html'></iframe>";
+
+                        break;
+                    case 13:
+                        document.getElementById("muestra").innerHTML = "<iframe src='progress.html'></iframe>";
+
+                        break;
+                    case 14:
+                        document.getElementById("muestra").innerHTML = "<iframe src='output.html'></iframe>";
+
+                        break;
+                    case 15:
+                        document.getElementById("muestra").innerHTML = "<iframe src='ejercicio select.html'></iframe>";
+
+                        break;
+                    case 16:
+                        document.getElementById("muestra").innerHTML = "<iframe src='ejercicio textarea.html'></iframe>";
+
+                        break;
+                          
+
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <header><h1 id="titulos">TRABAJO HTML</h1></header>    
+            <div class="container">
+                <aside>
+                    <h2 id="menu" onclick="pintar(0)">MENU</h2>
+                    <ol>
+
+                        <li class="lista" onclick="pintar(1)">EJERCICIO 1</li>
+                        <li class="lista" onclick="pintar(2)">EJERCICIO 2</li>
+                        <li class="lista" onclick="pintar(3)">EJERCICIO 3</li>
+                        <li class="lista" onclick="pintar(4)">EJERCICIO 4</li>
+                        <li class="lista" onclick="pintar(5)">EJERCICIO 5</li>
+                        <li class="lista" onclick="pintar(6)">EJERCICIO 6</li>
+                        <li class="lista" onclick="pintar(7)">ETIQUETA INPUT</li>
+                        <li class="lista" onclick="pintar(8)">ETIQUETA BUTTON</li>
+                        <li class="lista" onclick="pintar(9)">ETIQUETA FIELDSET</li>
+                        <li class="lista" onclick="pintar(10)">ETIQUETA LABEL</li>
+                        <li class="lista" onclick="pintar(11)">ETIQUETA KEYGEN</li>
+                        <li class="lista" onclick="pintar(12)">ETIQUETA METER</li>
+                        <li class="lista" onclick="pintar(13)">ETIQUETA PROGRESS</li>
+                        <li class="lista" onclick="pintar(14)">ETIQUETA OUTPUT</li>
+                        <li class="lista" onclick="pintar(15)">ETIQUETA SELECT</li>
+                        <li class="lista" onclick="pintar(16)">ETIQUETA TEXTAREA</li>
+
+                    </ol>
+                </aside>
+                <section id="muestra" class="body">
+
+                </section>
+            </div>
+            <footer id="foot">GRUPO 5<BR>
+                angie<BR>
+                harold<BR>
+                cristian<BR>
+                deivid<BR>
+                julian<BR>
+
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RELLENA TU CV</title>
+</head>
+<body>
+<form action="enviar.php" autocomplete="on">
+<h2>Rellena tu CV</h2><br>
+Nombre<br>
+<input type="text" name="nombre"><br>
+Apellidos<br>
+<input type="text" name="apellidos"><br>
+Password<br>
+<input type="password" name="contrasena"><br>
+DNI<br>
+<input type="text" name="dni" pattern="[0-9]{8}-[a-zA-Z]{1}" title="XXXXXXXX-
+A"><br>
+SEXO<br>
+<input type="radio" name="sexo" value="Mujer"> Mujer<br>
+<input type="radio" name="sexo" value="Hombre"> Hombre<br><br><br>
+
+Incluir mi foto: <input type="file" name="fotografia" accept=”image/*”><br><br>
+<input type="checkbox" name="suscripcion" value="Suscribirme">
+Suscribirme al boletin de novedades<br><br><br>
+
+<input type="submit" value="Guardar cambios">
+<input type="reset" value="Borrar los datos introducidos">
+</form>
+</body>
+</html>
