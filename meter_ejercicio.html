@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>METER EJERCICIO</title>
+<meta charset="utf-8">
+<meta name="author" content="Deivid celis">
+
+</head>
+<body>
+<form name="formulario_datos" id="formulario_datos" action="enviar datos"
+method="post" >
+<fieldset form="formulario_datos" name="grupo_datos_personales">
+<legend> Datos Personales </legend>
+<label for="nombre" form="formulario_datos">Nombre: </label>
+<input type="text" name="nombre" id="nombre" value="" placeholder="nombre aqui"><br>
+<label for="celular" form="formulario_datos">celular: </label>
+<input type="text" name="celular" id="celular" value="" placeholder="celular aqui"><br>
+<select>
+<option value="hombre">hombre</option>
+<option value="mujer">mujer</option>
+
+
+</select>
+<keygen name="codificacion" id="codificacion" keytype="rsa" >
+<meter form="formulario _datos"name="valor"id="valor"value="7"min="0"max="10"low="4"high="8"optimum="6">2 sobre 10</meter></br>
+
+</fieldset>
+<input type="submit" name="enviar" value="Enviar Datos">
+</form>
+</body>
+</html>
